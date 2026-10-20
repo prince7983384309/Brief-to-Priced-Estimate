@@ -1,0 +1,42 @@
+
+ML Engineer (Generative AI & Computer Vision), Candidate Evaluation Task
+Allowed: Any LLM/vision API (Gemini, OpenAI, Claude, open-source models) and AI coding tools.
+________________________________________
+Scenario: "Brief to Priced Estimate"
+A sales rep sends a short brief plus an optional reference photo for a custom product. Your service must turn it into a structured spec, match the spec against a small inventory, estimate a quantity from the image, and say how much it trusts each output. The goal is a reliable service that knows when it is unsure, not a polished demo.
+Use any product domain you like (jewelry, furniture, packaging, lighting). State your choice in the README.
+________________________________________
+What to Build
+1. Structured Extraction (LLM)
+• POST /analyze accepts { "brief": "...", "image": <optional file> }.
+• Use an LLM or multimodal model to return schema-validated JSON (e.g., product type, material, dimensions, component specs, count of small parts). Use Pydantic or JSON Schema.
+• Handle malformed or empty model output without crashing: retry, repair, or degrade to a safe default, and say which in the response.
+2. Deterministic Matching (no LLM)
+• Provide a small inventory file (CSV/JSON, 30–50 rows; create it yourself or use the one we send).
+• Match extracted specs to inventory with a weighted scoring function you design and document (e.g., attribute weights, a minimum score before auto-selecting).
+• Same input must always return the same ranked candidates. Explain why this step should not be left to the LLM.
+3. Image-Based Estimate (Computer Vision)
+• From the reference image, estimate one measurable quantity: for example, count of small repeated items (stones, screws, holes, tiles) or relative size against a known reference object.
+• Start with a classical baseline (OpenCV: thresholding, contours, Hough circles, etc.). You may then try a vision-LLM and compare the two.
+4. Confidence and Review Flags
+• Every output field gets a confidence level (high/medium/low) with a stated reason.
+• Flag items for human review when confidence is low, values fall outside plausible ranges, or sources disagree (e.g., CV count vs. LLM count).
+5. Evaluation Harness (most important part)
+• Build a labeled test set of at least 15 cases (text briefs and 5+ images; real, public, or synthetic).
+• Write a script that runs the service over the set and reports: extraction field accuracy, matching top-1/top-3 hit rate, count error (MAE), and review-flag rate.
+• Include a failure analysis: your 3 worst failures, why they happened, and what you would change.
+6. Packaging
+• FastAPI service, requirements.txt, and a README with run instructions.
+• API keys via environment variables only. Nothing hardcoded or committed.
+• A few pytest tests (at least one for the matcher and one for malformed model output).
+Stretch Goals
+• Dockerfile and docker-compose.yml.
+• Model name and provider configurable by environment variable, with a fallback model if the first fails.
+• Per-request cost and latency logging.
+• A short note on how you would deploy this on AWS (services and why).
+________________________________________
+Deliverables
+1. GitHub repo (or zip) with code, tests, and test set
+2. README: setup, design decisions, limitations
+3. EVALUATION.md: metrics table, failure analysis, next steps
+4. One paragraph on how AI tools were used and what you changed or rejected from their output

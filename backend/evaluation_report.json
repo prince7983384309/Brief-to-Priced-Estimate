@@ -1,0 +1,360 @@
+{
+  "summary": {
+    "n_cases": 21,
+    "field_accuracy": {
+      "product_type": 1.0,
+      "material": 1.0,
+      "gem_count": 0.9047619047619048,
+      "size": 1.0
+    },
+    "match_top1_hit_rate": 0.7142857142857143,
+    "match_top3_hit_rate": 0.8095238095238095,
+    "count_mae": 2.25,
+    "review_flag_rate": 0.14285714285714285
+  },
+  "per_case": [
+    {
+      "id": "case_01",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_02",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_03",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_04",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_05",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": false,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_06",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_07",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_08",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": false,
+        "size": true
+      },
+      "top1_hit": false,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_09",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_10",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": false,
+      "top3_hit": false,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": true,
+      "review_reasons": [
+        "one or more extracted fields have low confidence",
+        "no inventory match scores at or above the minimum threshold (0.4)"
+      ]
+    },
+    {
+      "id": "case_11",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_12",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": false,
+      "top3_hit": false,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_13",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": null,
+      "count_error": null,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_14",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": 3,
+      "count_error": 2,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_15",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": 3,
+      "count_error": 4,
+      "review_required": true,
+      "review_reasons": [
+        "CV gem count (3) and LLM gem count (7) disagree by 4"
+      ]
+    },
+    {
+      "id": "case_16",
+      "extraction_method": "llm_success",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": 0,
+      "count_error": 0,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_17",
+      "extraction_method": "llm_repaired",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": false,
+      "top3_hit": false,
+      "cv_count": 1,
+      "count_error": 2,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_18",
+      "extraction_method": "llm_repaired",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": false,
+      "top3_hit": false,
+      "cv_count": 6,
+      "count_error": 6,
+      "review_required": true,
+      "review_reasons": [
+        "CV gem count (6) and LLM gem count (12) disagree by 6"
+      ]
+    },
+    {
+      "id": "case_19",
+      "extraction_method": "llm_repaired",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": 0,
+      "count_error": 0,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_20",
+      "extraction_method": "llm_repaired",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": true,
+      "top3_hit": true,
+      "cv_count": 2,
+      "count_error": 2,
+      "review_required": false,
+      "review_reasons": []
+    },
+    {
+      "id": "case_21",
+      "extraction_method": "llm_repaired",
+      "field_correct": {
+        "product_type": true,
+        "material": true,
+        "gem_count": true,
+        "size": true
+      },
+      "top1_hit": false,
+      "top3_hit": true,
+      "cv_count": 6,
+      "count_error": 2,
+      "review_required": false,
+      "review_reasons": []
+    }
+  ]
+}

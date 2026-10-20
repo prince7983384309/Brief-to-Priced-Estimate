@@ -1,0 +1,269 @@
+[
+  {
+    "id": "case_01",
+    "brief": "Looking for a gold ring with 5 small diamonds, size 7.",
+    "image": null,
+    "expected": {
+      "product_type": "ring",
+      "material": "gold",
+      "gem_count": 5,
+      "size": 7
+    },
+    "expected_top_sku": "RNG-002"
+  },
+  {
+    "id": "case_02",
+    "brief": "Need a plain silver band, no stones, size 6.",
+    "image": null,
+    "expected": {
+      "product_type": "ring",
+      "material": "silver",
+      "gem_count": 0,
+      "size": 6
+    },
+    "expected_top_sku": "RNG-006"
+  },
+  {
+    "id": "case_03",
+    "brief": "Customer wants a platinum necklace with 12 small gems, 20 inches.",
+    "image": null,
+    "expected": {
+      "product_type": "necklace",
+      "material": "platinum",
+      "gem_count": 12,
+      "size": 20
+    },
+    "expected_top_sku": "NCK-003"
+  },
+  {
+    "id": "case_04",
+    "brief": "Rose gold bracelet, plain, no gems, wrist size 7.",
+    "image": null,
+    "expected": {
+      "product_type": "bracelet",
+      "material": "rose_gold",
+      "gem_count": 0,
+      "size": 7
+    },
+    "expected_top_sku": "BRC-004"
+  },
+  {
+    "id": "case_05",
+    "brief": "Pair of white gold earrings, 2 small gems each.",
+    "image": null,
+    "expected": {
+      "product_type": "earrings",
+      "material": "white_gold",
+      "gem_count": 2,
+      "size": null
+    },
+    "expected_top_sku": "EAR-005"
+  },
+  {
+    "id": "case_06",
+    "brief": "Budget-friendly gold pendant, 1 gem, 18 inch chain, under $350.",
+    "image": null,
+    "expected": {
+      "product_type": "pendant",
+      "material": "gold",
+      "gem_count": 1,
+      "size": 18
+    },
+    "expected_top_sku": "PND-001"
+  },
+  {
+    "id": "case_07",
+    "brief": "Silver pendant, single stone, 18 inch chain.",
+    "image": null,
+    "expected": {
+      "product_type": "pendant",
+      "material": "silver",
+      "gem_count": 1,
+      "size": 18
+    },
+    "expected_top_sku": "PND-002"
+  },
+  {
+    "id": "case_08",
+    "brief": "Heavy statement necklace, gold, lots of stones, around 25, size 22.",
+    "image": null,
+    "expected": {
+      "product_type": "necklace",
+      "material": "gold",
+      "gem_count": 25,
+      "size": 22
+    },
+    "expected_top_sku": "NCK-008"
+  },
+  {
+    "id": "case_09",
+    "brief": "Simple engagement ring, platinum, one gem, size 6.",
+    "image": null,
+    "expected": {
+      "product_type": "ring",
+      "material": "platinum",
+      "gem_count": 1,
+      "size": 6
+    },
+    "expected_top_sku": "RNG-015"
+  },
+  {
+    "id": "case_10",
+    "brief": "Something with sparkle, not sure of the type or metal.",
+    "image": null,
+    "expected": {
+      "product_type": "unknown",
+      "material": "unknown",
+      "gem_count": 0,
+      "size": null
+    },
+    "expected_top_sku": null,
+    "notes": "Deliberately vague brief -- should trigger low confidence / review flag."
+  },
+  {
+    "id": "case_11",
+    "brief": "Eternity band, white gold, 11 small diamonds, ring size 7.",
+    "image": null,
+    "expected": {
+      "product_type": "ring",
+      "material": "white_gold",
+      "gem_count": 11,
+      "size": 7
+    },
+    "expected_top_sku": "RNG-012"
+  },
+  {
+    "id": "case_12",
+    "brief": "Thin silver bracelet, no gems, size 7.",
+    "image": null,
+    "expected": {
+      "product_type": "bracelet",
+      "material": "silver",
+      "gem_count": 0,
+      "size": 7
+    },
+    "expected_top_sku": "BRC-006",
+    "notes": "No exact silver+0-gem bracelet in inventory (BRC-006 is gold) -- tests close-but-imperfect matches."
+  },
+  {
+    "id": "case_13",
+    "brief": "Rose gold earrings with 10 tiny gems total.",
+    "image": null,
+    "expected": {
+      "product_type": "earrings",
+      "material": "rose_gold",
+      "gem_count": 10,
+      "size": null
+    },
+    "expected_top_sku": "EAR-004"
+  },
+  {
+    "id": "case_14",
+    "brief": "Gold ring, 5 gems, size 7 -- matches a ring in the reference photo.",
+    "image": "synthetic_ring_02.png",
+    "expected": {
+      "product_type": "ring",
+      "material": "gold",
+      "gem_count": 5,
+      "size": 7
+    },
+    "expected_top_sku": "RNG-002",
+    "expected_cv_gem_count": 5
+  },
+  {
+    "id": "case_15",
+    "brief": "Gold ring with 7 gems, size 7, see photo.",
+    "image": "synthetic_ring_03.png",
+    "expected": {
+      "product_type": "ring",
+      "material": "gold",
+      "gem_count": 7,
+      "size": 7
+    },
+    "expected_top_sku": "RNG-003",
+    "expected_cv_gem_count": 7
+  },
+  {
+    "id": "case_16",
+    "brief": "Plain gold ring, no stones, size 8, matches photo.",
+    "image": "synthetic_ring_04.png",
+    "expected": {
+      "product_type": "ring",
+      "material": "gold",
+      "gem_count": 0,
+      "size": 8
+    },
+    "expected_top_sku": "RNG-013",
+    "expected_cv_gem_count": 0
+  },
+  {
+    "id": "case_17",
+    "brief": "Gold ring with 3 small gems, size 6, see attached photo.",
+    "image": "synthetic_ring_01.png",
+    "expected": {
+      "product_type": "ring",
+      "material": "gold",
+      "gem_count": 3,
+      "size": 6
+    },
+    "expected_top_sku": "RNG-005",
+    "expected_cv_gem_count": 3,
+    "notes": "RNG-005 is silver in inventory -- tests material mismatch against an otherwise close match."
+  },
+  {
+    "id": "case_18",
+    "brief": "Busy gold ring, many small gems (about 12), size 7, photo attached.",
+    "image": "synthetic_ring_05.png",
+    "expected": {
+      "product_type": "ring",
+      "material": "gold",
+      "gem_count": 12,
+      "size": 7
+    },
+    "expected_top_sku": "RNG-012",
+    "expected_cv_gem_count": 12,
+    "notes": "Brief says gold, closest gem-count match (RNG-012) is white_gold -- tests disagreement handling."
+  },
+  {
+    "id": "case_19",
+    "brief": "Plain gold ring, no stones, size 8, see photo.",
+    "image": "synthetic_ring_06_plain.png",
+    "expected": {
+      "product_type": "ring",
+      "material": "gold",
+      "gem_count": 0,
+      "size": 8
+    },
+    "expected_top_sku": "RNG-013",
+    "expected_cv_gem_count": 0,
+    "notes": "Negative control: truly plain band, no decoy highlights -- CV should correctly report 0."
+  },
+  {
+    "id": "case_20",
+    "brief": "Plain polished gold ring, no stones, size 8, very shiny, see photo.",
+    "image": "synthetic_ring_07_reflective.png",
+    "expected": {
+      "product_type": "ring",
+      "material": "gold",
+      "gem_count": 0,
+      "size": 8
+    },
+    "expected_top_sku": "RNG-013",
+    "expected_cv_gem_count": 0,
+    "notes": "Image has 0 real gems but 6 decoy specular-highlight circles -- reproduces the false-positive bug found via Swagger, where reflections on a real photo get misread as gems by Hough circle detection."
+  },
+  {
+    "id": "case_21",
+    "brief": "Gold ring with 4 small gems, size 7, slightly shiny, see photo.",
+    "image": "synthetic_ring_08_mixed.png",
+    "expected": {
+      "product_type": "ring",
+      "material": "gold",
+      "gem_count": 4,
+      "size": 7
+    },
+    "expected_top_sku": "RNG-001",
+    "expected_cv_gem_count": 4,
+    "notes": "4 real gems + 4 decoy highlights -- tests whether reflections inflate the count even when some real gems are also present."
+  }
+]

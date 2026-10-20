@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brief to Priced Estimate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Brief to Priced Estimate</h1>
+    <p class="subtitle">Jewelry sales brief -&gt; structured spec, inventory match, gem-count estimate, priced estimate</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <form id="analyze-form">
+        <label for="brief">Sales brief</label>
+        <textarea id="brief" name="brief" rows="3" placeholder="e.g. Gold ring with 5 small diamonds, size 7" required></textarea>
+
+        <label for="image">Reference photo (optional)</label>
+        <input type="file" id="image" name="image" accept="image/*" />
+
+        <button type="submit" id="submit-btn">Analyze</button>
+      </form>
+      <p id="error-message" class="error hidden"></p>
+    </section>
+
+    <section class="panel hidden" id="results"></section>
+  </main>
+
+  <footer>
+    <span id="api-base-label"></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
